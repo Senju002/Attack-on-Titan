@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 8000px; */
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Start Navigasi Bar */
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(124, 88, 62);
+  color: black;
+  /* margin: 0 2rem 0; */
+}
+
+.navbar-title {
+  padding-left: 3rem;
+  height: 54px;
+  width: 241px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-right: 3rem;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(50, 35, 25);
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.navbar-links li a:hover {
+  color: rgb(73, 51, 35);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* Start Landing Page */
+.main-img {
+  background-image: url(Image/Main-Page.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.main-title {
+  padding-top: 25rem;
+  width: 60%;
+  /* height: 251px; */
+  height: 100%;
+  padding-bottom: 1rem;
+}
+/* End Landing page */
+
+/* Start Plot */
+.Plot-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.plot-card {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: solid 2px green; */
+}
+
+.plot-title1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.plot-title2 {
+  margin-top: -5rem;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.text-color {
+  color: rgb(145, 104, 74);
+}
+
+.colosal-titan {
+  /* width: 902px; */
+  width: 80%;
+  /* height: 500px; */
+  height: 80%;
+}
+
+.plot {
+  text-align: justify;
+  font-size: 1.8rem;
+  padding-right: 10rem;
+  /* width: 20%; */
+}
+
+/* End Plot */
+
+/* Start Reveal Effect */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* End Reveal Effect */
+
+/* Start Shifters */
+.shifters-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.card-section {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px rgb(145, 104, 74);
+  border-radius: 30px;
+}
+
+.ukuran {
+  margin: 2rem 2rem 0rem 2rem;
+  width: 250px;
+  height: 250px;
+}
+
+.card-name {
+  font-size: 2.5rem;
+}
+
+.card-name-jp {
+  margin-top: -1rem;
+  font-size: 1.5rem;
+}
+
+.Card h3 {
+  color: white;
+  background-color: rgb(145, 104, 74);
+  border: solid 5px rgb(145, 104, 74);
+  border-radius: 30px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.7rem;
+  margin-top: -0.4rem;
+}
+
+.Card h3:hover {
+  cursor: pointer;
+  background-color: rgb(177, 130, 97);
+  border: solid 5px rgb(177, 130, 97);
+}
+.shifters-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* End Shifters */
+
+/* Start Footer */
+.footer-section {
+  margin-top: 15rem;
+  background-color: rgb(124, 88, 62);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section h1 {
+  margin-top: 3rem;
+  font-size: 6rem;
+  margin-bottom: -2rem;
+}
+
+.footer-section img {
+  min-width: 20%;
+}
+
+.footer-section h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+/* End Footer */
+
+@media (max-width: 800px) {
+  /* Start Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    padding-right: 0rem;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+    background-color: rgb(124, 88, 62);
+    color: rgb(50, 35, 25);
+  }
+
+  .navbar-links ul li a:hover {
+    color: rgb(73, 51, 35);
+    transition: all 0.5s;
+    font-weight: bold;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  /* Start landing page */
+  .main-img {
+    background-position: center;
+  }
+  /* Start Plot */
+  .plot-title1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .plot-title2 {
+    margin-top: -3rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+  }
+
+  .plot-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px green; */
+  }
+  .plot {
+    text-align: justify;
+    font-size: 1.5rem;
+    padding-right: 0rem;
+    /* width: 20%; */
+  }
+  /* Start Footer */
+
+  .footer-section h1 {
+    font-size: 3rem;
+    margin-bottom: -1rem;
+  }
+  .footer-section img {
+    max-width: 50%;
+  }
+}
