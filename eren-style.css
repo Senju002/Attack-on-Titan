@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 8000px; */
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Start Main Page */
+
+.main-bg {
+  background-image: url(Image/About/Eren-bg.png);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+
+.text-color {
+  color: white;
+}
+
+.Eren-Name1 {
+  margin-top: 16rem;
+  font-size: 6rem;
+}
+
+.Eren-Name2 {
+  margin-top: -5rem;
+  font-size: 4.5rem;
+}
+
+.Eren-Quote {
+  font-size: 1.5rem;
+  margin-top: -2rem;
+  width: 40%;
+  text-align: justify;
+  margin-bottom: 17rem;
+  font-style: italic;
+}
+
+/* End Main Page */
+
+/* Start Aboout */
+/* Eren */
+.about-eren {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.eren-card {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  overflow: hidden;
+}
+
+.text-color2 {
+  color: rgb(29, 15, 7);
+}
+
+.about-txt {
+  padding-top: 3rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.about-eren h4 {
+  margin-top: -3rem;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.eren-txt {
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-right: 3rem;
+  max-width: 60%;
+}
+
+.eren-avtr {
+  width: 594px;
+  height: 477px;
+}
+
+/* Attack */
+.attack-card {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  overflow: hidden;
+}
+
+.attack-txt {
+  padding-top: 3rem;
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  max-width: 100%;
+}
+
+.attack-avtr {
+  width: 554px;
+  height: 577px;
+}
+
+.powers-txt {
+  padding-top: 3rem;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+/* Founding */
+.founding-card {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  overflow: hidden;
+}
+
+.founding-txt {
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.5rem;
+  padding-right: 3rem;
+  max-width: 60%;
+  margin-top: 2rem;
+}
+
+.founding-avtr {
+  width: 554px;
+  height: 377px;
+}
+
+/* War Hammer */
+.war-card {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  overflow: hidden;
+}
+
+.war-txt {
+  padding-top: 8rem;
+  text-align: justify;
+  font-style: italic;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+.war-avtr {
+  width: 1011px;
+  height: 827px;
+}
+/* End About */
+
+/* Start Footer */
+.footer-section {
+  margin-top: 15rem;
+  background-color: rgb(29, 15, 7);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo1 {
+  margin-top: 4rem;
+  margin-bottom: -1rem;
+}
+
+.logo2 {
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+}
+
+.logo3 {
+  margin-top: 2rem;
+}
+
+.footer-section img {
+  min-width: 20%;
+}
+
+.footer-section h4 {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+/* End Footer */
+
+/* Start Reveal Effect */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* End Reveal Effect */
+
+@media (max-width: 850px) {
+  .Eren-Name1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .Eren-Name2 {
+    margin-top: -2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .Eren-Quote {
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 60%;
+  }
+  .main-bg {
+    background-position: center;
+  }
+  /* Start About */
+  /* Eren */
+  .eren-card {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .eren-txt {
+    padding-top: 2rem;
+    padding-right: 0rem;
+    max-width: 90%;
+  }
+  .eren-avtr {
+    width: 454px;
+    height: 477px;
+  }
+  /* Attack Titan */
+  .attack-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .attack-txt {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    padding-left: 0rem;
+    max-width: 90%;
+  }
+
+  .attack-avtr {
+    width: 354px;
+    height: 377px;
+  }
+  .powers-txt {
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  /* Founding Titan */
+  .founding-card {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .founding-txt {
+    padding-right: 0rem;
+    max-width: 90%;
+    margin-top: 3rem;
+  }
+
+  .founding-avtr {
+    width: 90%;
+    height: 90%;
+  }
+  /* War Titan */
+  .war-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .war-txt {
+    padding-right: 0rem;
+    max-width: 90%;
+    margin-top: -4rem;
+  }
+  .war-avtr {
+    width: 90%;
+    height: 60%;
+  }
+  /* Start Footer */
+
+  .footer-section img {
+    max-width: 50%;
+  }
+}

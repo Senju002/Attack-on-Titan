@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="navbar-style.css" />
     <link rel="stylesheet" href="lightslider.css" />
     <script type="text/javascript" src="Jquery.js"></script>
     <script type="text/javascript" src="lightslider.js"></script>
@@ -11,23 +12,22 @@
   </head>
   <body>
     <!-- Awal Navigasi Bar -->
-    <nav class="navbar">
+    <!-- <nav class="navbar">
       <img src="Image/Navbar-Title.png" alt="" class="navbar-title" />
-      <a href="#" class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Songs</a></li>
-          <li><a href="#">History</a></li>
-        </ul>
-      </div>
+    </nav> -->
+
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="nav">
+      <ul class="pt-5">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="#">Songs</a></li>
+        <li><a href="#">History</a></li>
+      </ul>
     </nav>
+
     <!-- End Navigasi Bar -->
 
     <!-- Start Landing Page -->
@@ -71,7 +71,7 @@
               <img src="Image/Eren_Pfp.png" alt="" class="ukuran" />
               <h1 class="text-color card-name">Eren Yeager</h1>
               <h2 class="text-color card-name-jp">『エレン・イェーガー』</h2>
-              <h3>More Info</h3>
+              <a href="eren.html"><h3>More Info</h3></a>
             </div>
           </li>
           <li class="item-a">
@@ -129,8 +129,9 @@
 
     <!-- Start Footer -->
     <div class="footer-section">
-      <h1>自殺のろくでなし</h1>
-      <img src="Image/logo-footer.png" alt="" />
+      <img src="Image/wit-studio.png" alt="" class="logo1" />
+      <img src="Image/mappa.png" alt="" class="logo2" />
+      <img src="Image/logo-footer.png" alt="" class="logo2" />
       <h4>©Senju</h4>
     </div>
     <!-- End Footer -->
